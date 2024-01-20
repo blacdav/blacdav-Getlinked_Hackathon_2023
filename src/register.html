@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>getlinked</title>
+    <link rel="stylesheet" href="output.css">
+</head>
+<body class="bg-tertiary text-white w-4/5 m-auto">
+    <header class="pt-5 bg-transparent z-10 fixed w-4/5">
+        <section class="flex gap-5 justify-between">
+            <h1 class="text-2xl font-bold -z-20">get<span class="text-secondary">linked</span></h1>
+            <div class="hidden lg:flex gap-16">
+                <ul class="flex gap-5 pt-2">
+                    <li>Timeline</li>
+                    <li>Overview</li>
+                    <li>FAQs</li>
+                    <li>Contact</li>
+                </ul>
+                <button class="gradient py-2 px-8 rounded-sm">Register</button>
+            </div>
+            <img src="../IMG/Vectormobile menu.svg" alt="..." class="block lg:hidden" id="menu">
+        </section>
+        <div class="hidden flex-col justify-start bg-tertiary p-10 z-20 -mt-14 rounded-md shadow-md shadow-primary" id="menulist">
+            <div class="flex justify-end w-full m-auto">
+                <button class="flex items-center justify-center h-8 w-8 rounded-full gradient " id="closemenu">
+                    <div class="flex items-center justify-center h-6 w-6 rounded-full bg-tertiary ">
+                        <img src="../IMG/Vectorclose menu.webp" alt="...">
+                    </div>
+                </button>
+            </div>
+            <ul class="flex-col gap-12 pt-8">
+                <li>Timeline</li>
+                <li>Overview</li>
+                <li>FAQs</li>
+                <li>Contact</li>
+            </ul>
+            <button class="gradient py-2 my-8 px-4 w-4/5 rounded-sm text-center">Register</button>
+        </div>
+    </header>
+
+    <script src="../JS/script.js"></script>
+</body>
+</html>
