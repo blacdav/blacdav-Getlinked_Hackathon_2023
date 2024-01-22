@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>getlinked</title>
+    <link rel="stylesheet" href="output.css">
+</head>
+<body class="bg-tertiary text-white text-xs md:text-base m-auto">
+    <header class="hidden lg:block pt-5 bg-transparent z-10 w-full fixed">
+        <section class="w-4/5 m-auto">
+            <section class="flex gap-5 justify-between">
+                <h1 class="text-2xl font-bold -z-20">get<span class="text-secondary">linked</span></h1>
+                <div class="hidden lg:flex gap-16">
+                    <ul class="flex gap-5 pt-2">
+                        <li><a href="index.html">Timeline</a></li>
+                        <li>Overview</li>
+                        <li>FAQs</li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                    <button class="border-2 border-secondary py-2 px-8 rounded-md hover:gradient"><a href="register.html">Register</a></button>
+                </div>
+                <img src="../IMG/Vectormobile menu.svg" alt="..." class="block lg:hidden" id="menu">
+            </section>
+            <div class="hidden flex-col justify-start bg-tertiary p-10 z-20 -mt-14 rounded-md shadow-md shadow-primary" id="menulist">
+                <div class="flex justify-end w-full m-auto">
+                    <button class="flex items-center justify-center h-7 w-7 rounded-full gradient" id="closemenu">
+                        <div class="flex items-center justify-center h-6 w-6 rounded-full bg-tertiary ">
+                            <img src="../IMG/Vectorclose menu.webp" alt="...">
+                        </div>
+                    </button>
+                </div>
+                <ul class="flex flex-col gap-5 pt-8">
+                    <li><a href="index.html">Timeline</a></li>
+                    <li>Overview</li>
+                    <li>FAQs</li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <button href="register.html" class="border border-secondary py-2 my-8 px-4 w-4/5 rounded-sm text-center"><a href="register.html">Register</a></button>
+            </div>
+        </section>
+    </header>
+
+    <div class="flex justify-start w-4/5 mt-5 m-auto lg:hidden">
+        <button class="flex items-center justify-center h-7 w-7 rounded-full gradient" id="btn_back">
+            <div class="flex items-center justify-center h-6 w-6 rounded-full bg-tertiary "> <
+                <!-- <img src="../IMG/Vectorclose menu.webp" alt="..."> -->
+            </div>
+        </button>
+    </div>
+
+    <section class="flex flex-col lg:flex-row pt-2 lg:pt-20 w-4/5 m-auto lg:justify-center">
+        <img src="../IMG/Purple-Lens-Flare-PNGblury.svg" alt="..." class="block lg:hidden blur-lg -mb-48">
+        <div class="hidden lg:block w-full lg:w-1/2">
+            <img src="../IMG/Purple-Lens-Flare-PNGblury.svg" alt="..." class="">
+            <div class="-mt-96">
+                <h1 class="text-secondary text-2xl font-bold mb-4">Get in touch</h1>
+                <ul class="grid grid-cols-1 gap-4">
+                    <li class="w-1/6">Contact Information</li>
+                    <li class="w-1/5">27,Alara Street Yaba 100012 Lagos State</li>
+                    <li>Call Us: <a href="tel:+2348077116265">+2348077116265</a></li>
+                    <li class="w-1/2">we are open from Monday-Friday 08:00am-05:00pm</li>
+                    <li class="items-baseline text-secondary font-medium">Share on
+                        <p class="flex gap-3 items-baseline">
+                            <a href="#" class="ml-2 lg:ml-5"><img src="../IMG/Vectorinstagram.svg" alt="..." class="w-3 lg:w-5"></a>
+                            <a href="#"><img src="../IMG/Vectorx.svg" alt="..." class="w-3 lg:w-5"></a>
+                            <a href="#"><img src="../IMG/Vectorfacebook.svg" alt="..." class="w-2 lg:w-3"></a>
+                            <a href="#"><img src="../IMG/ri_linkedin-fill.svg" alt="..." class="w-3 lg:w-5"></a>
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="w-full lg:w-1/2 lg:mt-28 flex flex-col">
+            <h1 class="text-xl font-bold text-secondary">Questions or need assistance? <br>Let us know about it</h1>
+            <p class="my-8">Email us below to any question reated to your event</p>
+            <form action="" class="grid grid-cols-1 gap-4 justify-center" method="post" name="contact" netlify>
+                <div class="grid grid-cols-1 gap-4 justify-center mb-4">
+                    <input type="text" name="name" id="fullname" class="bg-transparent border border-white rounded-md p-2" placeholder="FullName">
+                    <input type="text" name="topic" id="topic" class="block lg:hidden bg-transparent border border-white rounded-md p-2" placeholder="Topic">
+                    <input type="email" name="email" id="mail" class="bg-transparent border border-white rounded-md p-2" placeholder="Mail">
+                    <input type="text" name="message" id="message" class="bg-transparent border border-white rounded-md p-2" placeholder="Message">
+                </div>
+                <img src="../IMG/star pu.svg" alt="..." class="w-3 lg:w-5 -mb-48">
+                <div class="flex justify-center">
+                    <button type="submit" class="gradient p-2 w-1/2 rounded-sm">Submit</button>
+                </div>
+            </form>
+            <div class="items-baseline text-secondary text-center mt-5 font-medium block lg:hidden">Share on
+                <p class="flex gap-3 items-baseline justify-center">
+                    <a href="#" class="ml-2 lg:ml-5"><img src="../IMG/Vectorinstagram.svg" alt="..." class="w-3 lg:w-5"></a>
+                    <a href="#"><img src="../IMG/Vectorx.svg" alt="..." class="w-3 lg:w-5"></a>
+                    <a href="#"><img src="../IMG/Vectorfacebook.svg" alt="..." class="w-2 lg:w-3"></a>
+                    <a href="#"><img src="../IMG/ri_linkedin-fill.svg" alt="..." class="w-3 lg:w-5"></a>
+                </p>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
