@@ -8,15 +8,15 @@
     </head>
 
     <body class="bg-tertiary text-white text-xs md:text-base m-auto">
-        <header class="pt-5 bg-transparent z-10 w-full fixed">
+        <header class="pt-5 bg-transparent z-50 w-full fixed">
             <section class="w-4/5 m-auto">
                 <section class="flex gap-5 justify-between">
                     <h1 class="text-2xl font-bold -z-20">get<span class="text-secondary">linked</span></h1>
                     <div class="hidden lg:flex gap-16">
                         <ul class="flex gap-5 pt-2">
                             <li><a href="index.html">Timeline</a></li>
-                            <li>Overview</li>
-                            <li>FAQs</li>
+                            <li><a href="#Overview">Overview</a></li>
+                            <li><a href="#FAQs">FAQs</a></li>
                             <li><a href="contact.html">Contact</a></li>
                         </ul>
                         <button class="gradient py-2 px-8 rounded-sm"><a href="register.html">Register</a></button>
@@ -31,27 +31,28 @@
                             </div>
                         </button>
                     </div>
-                    <ul class="flex flex-col gap-5 pt-8">
-                        <li><a href="index.html">Timeline</a></li>
-                        <li>Overview</li>
-                        <li>FAQs</li>
-                        <li><a href="contact.html">Contact</a></li>
+                    <ul class="flex flex-col gap-5 pt-8" id="closemenu">
+                        <li class="close"><a href="index.html">Timeline</a></li>
+                        <li class="close"><a href="#Overview">Overview</a></li>
+                        <li class="close"><a href="#FAQs">FAQs</a></li>
+                        <li class="close"><a href="contact.html">Contact</a></li>
                     </ul>
                     <button href="register.html" class="gradient py-2 my-8 px-4 w-4/5 rounded-sm text-center"><a href="register.html">Register</a></button>
                 </div>
             </section>
         </header>
 
-        <section class="pt-24 w-4/5 m-auto flex flex-col-reverse lg:flex-row justify-between text-end">
-            <img src="../IMG/star.svg" alt="..." class="ml-10 mt-5 w-3 lg:w-5 animate-bounce" id="star">
-            <div>
+        <section class="pt-24 lg:pt-0 w-4/5 m-auto flex flex-col-reverse lg:flex-row justify-between items-start text-end">
+            <img src="../IMG/star.svg" alt="..." class="ml-10 w-3 lg:w-5 mt-20 animate-bounce" id="star">
+            <img src="../IMG/Purple-Lens-Flare-PNGblury.svg" alt="..." class="w-1/2 -mb-10 -mt-10">
+            <div class="mt-20 pb-5">
                 <p class="text-sm lg:text-2xl font-bold">Igniting a Revolution in HR Innovation</p>
                 <img src="../IMG/Vector 4line.svg" alt="..." class="w-24 lg:w-36 float-right">
             </div>
         </section>
-
-        <section class="flex flex-col lg:flex-row w-4/5 m-auto justify-center lg:justify-between">
-            <img src="../IMG/Purple-Lens-Flare-PNGblury.webp" alt="" class="hidden">
+        
+        <section class="flex flex-col lg:flex-row w-4/5 m-auto justify-center lg:justify-between lg:-mt-48">
+            
             <div class="w-full lg:w-1/2 text-center lg:text-justify">
                 <img src="../IMG/Title.webp" alt="...">
                 <p>Participate in getlinked tech hackathon 2023 stand <br>a chance to win a Big prize</p>
@@ -150,7 +151,7 @@
             </div>
         </section>
         
-        <section class="flex flex-col lg:flex-row w-4/5 m-auto items-center">
+        <section class="flex flex-col lg:flex-row w-4/5 m-auto items-center" id="FAQs">
             <div class="w-full lg:w-1/2">
                 <img src="../IMG/star pu.svg" alt="..." class="w-3 lg:w-5 -ml-8" id="star">
                 <h2 class="text-2xl font-bold text-center lg:text-justify">Frequently Ask <br><span class="text-secondary">Question</span></h2>
@@ -181,7 +182,7 @@
             </div>
         </section>
         
-        <div class="text-center w-4/5 m-auto">
+        <div class="text-center w-4/5 m-auto" id="Overview">
             <h1 class="text-2xl font-bold mb-3">Timeline</h1>
             <p>Here is the breakdown of the time we anticipate <br>using for the upcoming event.</p>
         </div>
@@ -207,9 +208,9 @@
                 <div class="w-full lg:w-1/3 mb-10 lg:mb-auto">
                     <h1 class="font-medium text-secondary">Usefull Links</h1>
                     <ul class="my-3">
-                        <li class="mb-3"><a href="#">Overview</a></li>
+                        <li class="mb-3"><a href="#Overview">Overview</a></li>
                         <li class="mb-3"><a href="index.html">Timeline</a></li>
-                        <li class="mb-3"><a href="#">FAQs</a></li>
+                        <li class="mb-3"><a href="#FAQs">FAQs</a></li>
                         <li class="mb-3"><a href="contact.html">Contact</a></li>
                         <li class=""><a href="register.html">Register</a></li>
                     </ul>

@@ -14,8 +14,8 @@
                 <div class="hidden lg:flex gap-16">
                     <ul class="flex gap-5 pt-2">
                         <li><a href="index.html">Timeline</a></li>
-                        <li>Overview</li>
-                        <li>FAQs</li>
+                        <li><a href="index.html#Overview">Overview</a></li>
+                        <li><a href="index.html#FAQs">FAQs</a></li>
                         <li><a href="contact.html">Contact</a></li>
                     </ul>
                     <button class="border-2 border-secondary py-2 px-8 rounded-md hover:gradient"><a href="register.html">Register</a></button>
@@ -31,10 +31,10 @@
                     </button>
                 </div>
                 <ul class="flex flex-col gap-5 pt-8">
-                    <li><a href="index.html">Timeline</a></li>
-                    <li>Overview</li>
-                    <li>FAQs</li>
-                    <li><a href="contact.html">Contact</a></li>
+                    <li class="close"><a href="index.html">Timeline</a></li>
+                    <li><a href="index.html#Overview">Overview</a></li>
+                    <li><a href="index.html#FAQs">FAQs</a></li>
+                    <li class="close"><a href="contact.html">Contact</a></li>
                 </ul>
                 <button href="register.html" class="border border-secondary py-2 my-8 px-4 w-4/5 rounded-sm text-center"><a href="register.html">Register</a></button>
             </div>
@@ -49,10 +49,15 @@
         </button>
     </div>
 
-    <section class="flex flex-col lg:flex-row pt-2 lg:pt-20 w-4/5 m-auto lg:justify-center">
-        <img src="../IMG/Purple-Lens-Flare-PNGblury.svg" alt="..." class="block lg:hidden blur-lg -mb-48">
-        <div class="hidden lg:block w-full lg:w-1/2">
-            <img src="../IMG/Purple-Lens-Flare-PNGblury.svg" alt="..." class="">
+    <div class="flex justify-between lg:pt-20 w-4/5 m-auto -mb-28 px-28 lg:px-20">
+        <img src="../IMG/star pu.svg" alt="..." class="w-3 lg:w-5 mt-2 lg:mt-10" id="star">
+        <img src="../IMG/star.svg" alt="..." class="lg:w-5 hidden lg:block" id="star">
+    </div>
+
+    <section class="flex flex-col lg:flex-row pt-2 lg:px-10 lg:pt-10 w-4/5 m-auto lg:justify-center lg:items-center">
+        <img src="../IMG/Purple-Lens-Flare-PNGblury.svg" alt="..." class="block lg:hidden blur-lg -mb-48 -mt-5 lg:-mt-0">
+        <div class="hidden lg:block w-full lg:w-1/2 -mt-16">
+            <img src="../IMG/Purple-Lens-Flare-PNGblury.svg" alt="..." class="-ml-48">
             <div class="-mt-96">
                 <h1 class="text-secondary text-2xl font-bold mb-4">Get in touch</h1>
                 <ul class="grid grid-cols-1 gap-4">
@@ -71,22 +76,22 @@
                 </ul>
             </div>
         </div>
-        <div class="w-full lg:w-1/2 lg:mt-28 flex flex-col z-10">
-            <h1 class="text-xl font-bold text-secondary">Questions or need assistance? <br>Let us know about it</h1>
-            <p class="my-8">Email us below to any question reated to your event</p>
+        <div class="w-full lg:w-1/2 flex flex-col lg:p-10 lg:bg-slate-400 rounded-md z-10">
+            <h1 class="text-xl font-bold text-secondary lg:mb-4">Questions or need assistance? <br>Let us know about it</h1>
+            <p class="my-2 block lg:hidden py-5">Email us below to any question reated to your event</p>
             <form action="" class="grid grid-cols-1 gap-4 justify-center" method="post" name="contact" netlify>
                 <div class="grid grid-cols-1 gap-4 justify-center mb-4">
                     <input type="text" name="name" id="fullname" class="bg-transparent border border-white rounded-md p-2" placeholder="FullName">
                     <input type="text" name="topic" id="topic" class="block lg:hidden bg-transparent border border-white rounded-md p-2" placeholder="Topic">
                     <input type="email" name="email" id="mail" class="bg-transparent border border-white rounded-md p-2" placeholder="Mail">
-                    <input type="text" name="message" id="message" class="bg-transparent border border-white rounded-md p-2" placeholder="Message">
+                    <textarea name="message" id="message" class="bg-transparent border border-white rounded-md p-2" placeholder="Message" cols="30" rows="5"></textarea>
                 </div>
-                <img src="../IMG/star pu.svg" alt="..." class="w-3 lg:w-5 -mb-48">
+                <img src="../IMG/star pu.svg" alt="..." class="w-3 lg:w-5 -mb-10" id="star">
                 <div class="flex justify-center">
-                    <button type="submit" class="gradient p-2 w-1/2 rounded-sm">Submit</button>
+                    <button type="submit" class="gradient p-2 w-1/2 -top-20 rounded-sm">Submit</button>
                 </div>
             </form>
-            <div class="items-baseline text-secondary text-center mt-5 font-medium block lg:hidden">Share on
+            <div class="items-baseline text-secondary text-center mt-5 font-medium block lg:hidden pb-5 lg:pb-0">Share on
                 <p class="flex gap-3 items-baseline justify-center">
                     <a href="#" class="ml-2 lg:ml-5"><img src="../IMG/Vectorinstagram.svg" alt="..." class="w-3 lg:w-5"></a>
                     <a href="#"><img src="../IMG/Vectorx.svg" alt="..." class="w-3 lg:w-5"></a>
@@ -96,5 +101,6 @@
             </div>
         </div>
     </section>
+    <script src="../JS/script.js"></script>
 </body>
 </html>

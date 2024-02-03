@@ -23,7 +23,7 @@ menu.addEventListener('click', ()=> {
 });
 
 // this is to close the menu/navbar.
-const closemenu = document.querySelector('#closemenu');
+const closemenu = document.querySelectorAll('#closemenu');
 
 closemenu.addEventListener('click', ()=> {
     if(menulist.classList.contains('flex')){
@@ -35,3 +35,24 @@ closemenu.addEventListener('click', ()=> {
     }
 });
 
+const a = document.querySelector('#team-name');
+const b = document.querySelector('#telephone');
+const c = document.querySelector('#email');
+const d = document.querySelector('#project-name');
+
+document.addEventListener('submit', (e) => {
+    e.preventDefault
+
+    checkInput();
+});
+
+function checkInput() {
+    const team = a.value.trim();
+    const telephone = b.value.trim();
+    const email = c.value.trim();
+    const project = d.value.trim();
+
+    if(team == ''){
+        small.innerHTML.value === 'Please enter your team name'
+    }
+}

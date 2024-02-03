@@ -14,8 +14,8 @@
                 <div class="hidden lg:flex gap-16">
                     <ul class="flex gap-5 pt-2">
                         <li><a href="index.html">Timeline</a></li>
-                        <li>Overview</li>
-                        <li>FAQs</li>
+                        <li><a href="index.html#Overview">Overview</a></li>
+                        <li><a href="index.html#FAQs">FAQs</a></li>
                         <li><a href="contact.html">Contact</a></li>
                     </ul>
                     <button class="gradient py-2 px-8 rounded-sm"><a href="register.html">Register</a></button>
@@ -31,10 +31,10 @@
                     </button>
                 </div>
                 <ul class="flex flex-col gap-5 pt-8">
-                    <li><a href="index.html">Timeline</a></li>
-                    <li>Overview</li>
-                    <li>FAQs</li>
-                    <li><a href="contact.html">Contact</a></li>
+                    <li class="close"><a href="index.html">Timeline</a></li>
+                    <li><a href="index.html#Overview">Overview</a></li>
+                    <li><a href="index.html#FAQs">FAQs</a></li>
+                    <li class="close"><a href="contact.html">Contact</a></li>
                 </ul>
                 <button href="register.html" class="border border-gradient py-2 my-8 px-4 w-4/5 rounded-sm text-center"><a href="register.html">Register</a></button>
             </div>
@@ -46,19 +46,42 @@
             <!-- <img src="../IMG/Purple-Lens-Flare-PNGblury.svg" alt="..." class="lg:-ml-48 lg:-mt-28"> -->
             <img src="../IMG/3d-graphic-designer-showing-thumbs-up-png 1.webp" alt="..." class="lg:-ml-72">
         </div>
-        <div class="w-full bg-black p-14 rounded-md">
+        <div class="w-full lg:bg-black lg:p-14 rounded-md">
             <h1 class="text-secondary">Register</h1>
             <form action="" method="post" name="contact" netlify>
                 <div class="grid grid-cols-1 lg:grid-cols-2 gap-4">
-                    <label for="tel" class="flex flex-col">Team's Name <input type="tel" name="team-name" id="team-name" class="bg-transparent border border-white rounded-sm p-2" placeholder="Enter the name of your group"></label>
-                    <label for="email" class="flex flex-col">Phone <input type="email" name="telephone" id="telephone" class="bg-transparent border border-white rounded-sm p-2" placeholder="Enter your phone number"></label>
-                    <label for="name" class="flex flex-col">Email <input type="text" name="email" id="email" class="bg-transparent border border-white rounded-sm p-2" placeholder="Enter your email address"></label>
-                    <!-- <label for=""><input type="text"></label> -->
+                    <label for="tel" class="flex flex-col">Team's Name <input type="text" name="team-name" id="team-name" class="bg-transparent border border-white rounded-sm p-2" placeholder="Enter the name of your group"><small>test</small></label>
+                    <label for="email" class="flex flex-col">Phone <input type="tel" name="telephone" id="telephone" class="bg-transparent border border-white rounded-sm p-2" placeholder="Enter your phone number"><small>test</small></label>
+                    <label for="name" class="flex flex-col">Email <input type="email" name="email" id="email" class="bg-transparent border border-white rounded-sm p-2" placeholder="Enter your email address"><small>test</small></label>
+                    <label for="" class="flex flex-col">Project Topic <input type="text" name="project-name" id="project_name" class="bg-transparent border border-white rounded-sm p-2" placeholder="What is your group project topic"><small>test</small></label>
                     <!-- <label for="" clas><input type="text"></label> -->
                 </div>
-                <p class="text-secondary mt-5"><em>Please review your registration details before submitting</em></p>
-                <p><input type="checkbox" name="confirm" id="agreed"> I agreed to the event terms and conditions and privacy policy</p>
-                <button type="submit" class="w-full p-2 rounded-sm gradient mt-5">Register Now</button>
+                <div class="flex gap-4 mt-4">
+                    <div class="flex flex-col w-2/3 lg:w-full">
+                        <label for="category">Category</label>
+                        <select name="" id="" class="bg-transparent border border-white rounded-sm p-2">
+                            <option value="" class="bg-tertiary border border-none p-2">Select your Category</option>
+                            <option value="" class="bg-tertiary border border-none p-2">Category One</option>
+                            <option value="" class="bg-tertiary border border-none p-2">Category Two</option>
+                            <option value="" class="bg-tertiary border border-none p-2">Category Three</option>
+                        </select>
+                        <small>test</small>
+                    </div>
+                    <div class="flex flex-col w-1/3 lg:w-full">
+                        <label for="group">Group</label>
+                        <select name="" id="" class="bg-transparent border border-white rounded-sm p-2">
+                            <option value="" class="bg-tertiary border border-none p-2">Select</option>
+                            <option value="" class="bg-tertiary border border-none p-2">Five</option>
+                            <option value="" class="bg-tertiary border border-none p-2">Six</option>
+                            <option value="" class="bg-tertiary border border-none p-2">Seven</option>
+                            <option value="" class="bg-tertiary border border-none p-2">Eight</option>
+                        </select>
+                        <small>test</small>
+                    </div>
+                </div>
+                <p class="text-secondary mt-5 mb-2 text-xs"><em>Please review your registration details before submitting</em></p>
+                <p class="text-xs"><input type="checkbox" name="confirm" id="agreed"> I agreed to the event terms and conditions and privacy policy</p>
+                <button type="submit" class="w-full p-2 rounded-sm gradient mt-5 mb-5 lg:mb-0">Register Now</button>
             </form>
         </div>
     </section>
