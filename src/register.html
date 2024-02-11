@@ -41,50 +41,69 @@
         </section>
     </header>
     
-    <section class="flex flex-col lg:flex-row pt-24 w-4/5 m-auto">
-        <div class="flex w-full items-center">
-            <!-- <img src="../IMG/Purple-Lens-Flare-PNGblury.svg" alt="..." class="lg:-ml-48 lg:-mt-28"> -->
-            <img src="../IMG/3d-graphic-designer-showing-thumbs-up-png 1.webp" alt="..." class="lg:-ml-72">
+    <div class="hidden lg:flex justify-between lg:pt-20 w-4/5 m-auto -mb-28 px-28 lg:px-20">
+        <img src="../IMG/star pu.svg" alt="..." class="w-3 lg:w-5 mt-2 lg:mt-10" id="star">
+        <img src="../IMG/star.svg" alt="..." class="lg:w-5 hidden lg:block" id="star">
+    </div>
+    
+    <div class="w-4/5 m-auto block lg:hidden mt-5">
+        <h1 class="text-secondary text-xl font-bold mb-5">Register</h1>
+    </div>
+
+    <section class="flex flex-col lg:flex-row lg:pt-24 w-4/5 m-auto">
+        <div class="flex w-full items-center justify-center lg:-ml-28">
+            <img src="../IMG/Purple-Lens-Flare-PNGblury.svg" alt="..." class="-mb-72 lg:-mt-28">
+            <img src="../IMG/3d-graphic-designer-showing-thumbs-up-png 1.webp" alt="..." class="-ml-52 md:-ml-80 lg:-ml-96 z-50">
         </div>
-        <div class="w-full lg:bg-black lg:p-14 rounded-md">
-            <h1 class="text-secondary">Register</h1>
+        <div class="w-full lg:bg-white/10 backdrop-blur-md lg:p-10 rounded-md">
+            <h1 class="text-secondary text-2xl font-bold mb-5 hidden lg:block z-10">Register</h1>
+            <p class="mb-2">Be part of this movement!..........</p>
+            <h2 class="text-xl lg:text-2xl font-semibold mb-5">CREATE YOUR ACCOUNT</h2>
             <form action="" method="post" name="contact" netlify>
                 <div class="grid grid-cols-1 lg:grid-cols-2 gap-4">
-                    <label for="tel" class="flex flex-col">Team's Name <input type="text" name="team-name" id="team-name" class="bg-transparent border border-white rounded-sm p-2" placeholder="Enter the name of your group"><small>test</small></label>
-                    <label for="email" class="flex flex-col">Phone <input type="tel" name="telephone" id="telephone" class="bg-transparent border border-white rounded-sm p-2" placeholder="Enter your phone number"><small>test</small></label>
-                    <label for="name" class="flex flex-col">Email <input type="email" name="email" id="email" class="bg-transparent border border-white rounded-sm p-2" placeholder="Enter your email address"><small>test</small></label>
-                    <label for="" class="flex flex-col">Project Topic <input type="text" name="project-name" id="project_name" class="bg-transparent border border-white rounded-sm p-2" placeholder="What is your group project topic"><small>test</small></label>
-                    <!-- <label for="" clas><input type="text"></label> -->
+                    <label for="team-name" class="flex flex-col form-control">Team's Name <input type="text" name="team-name" id="team-name" class="bg-transparent border border-white rounded-sm p-2" placeholder="Enter the name of your group"><small class="text-red"></small></label>
+                    <label for="telephone" class="flex flex-col form-control">Phone <input type="tel" name="telephone" id="telephone" class="bg-transparent border border-white rounded-sm p-2" placeholder="Enter your phone number"><small class="text-red"></small></label>
+                    <label for="email" class="flex flex-col form-control">Email <input type="email" name="email" id="email" class="bg-transparent border border-white rounded-sm p-2" placeholder="Enter your email address"><small class="text-red"></small></label>
+                    <label for="project-name" class="flex flex-col form-control">Project Topic <input type="text" name="project-name" id="project-name" class="bg-transparent border border-white rounded-sm p-2" placeholder="What is your group project topic"><small class="text-red"></small></label>
                 </div>
                 <div class="flex gap-4 mt-4">
-                    <div class="flex flex-col w-2/3 lg:w-full">
+                    <div class="flex flex-col form-control w-2/3 lg:w-full">
                         <label for="category">Category</label>
-                        <select name="" id="" class="bg-transparent border border-white rounded-sm p-2">
+                        <select name="category" id="category" class="bg-transparent border border-white rounded-sm p-2">
                             <option value="" class="bg-tertiary border border-none p-2">Select your Category</option>
                             <option value="" class="bg-tertiary border border-none p-2">Category One</option>
                             <option value="" class="bg-tertiary border border-none p-2">Category Two</option>
                             <option value="" class="bg-tertiary border border-none p-2">Category Three</option>
                         </select>
-                        <small>test</small>
+                        <small class="text-red"></small>
                     </div>
-                    <div class="flex flex-col w-1/3 lg:w-full">
+                    <div class="flex flex-col form-control w-1/3 lg:w-full">
                         <label for="group">Group</label>
-                        <select name="" id="" class="bg-transparent border border-white rounded-sm p-2">
+                        <select name="group" id="group" class="bg-transparent border border-white rounded-sm p-2">
                             <option value="" class="bg-tertiary border border-none p-2">Select</option>
                             <option value="" class="bg-tertiary border border-none p-2">Five</option>
                             <option value="" class="bg-tertiary border border-none p-2">Six</option>
                             <option value="" class="bg-tertiary border border-none p-2">Seven</option>
                             <option value="" class="bg-tertiary border border-none p-2">Eight</option>
                         </select>
-                        <small>test</small>
+                        <small class="text-red"></small>
                     </div>
                 </div>
-                <p class="text-secondary mt-5 mb-2 text-xs"><em>Please review your registration details before submitting</em></p>
-                <p class="text-xs"><input type="checkbox" name="confirm" id="agreed"> I agreed to the event terms and conditions and privacy policy</p>
+                <p class="text-secondary my-2 text-xs"><em>Please review your registration details before submitting</em></p>
+                <p class="text-xs"><input type="checkbox" name="confirm" id="agreed" class="bg-transparent"> I agreed to the event terms and conditions and privacy policy</p>
                 <button type="submit" class="w-full p-2 rounded-sm gradient mt-5 mb-5 lg:mb-0">Register Now</button>
             </form>
         </div>
     </section>
+
+    <div class="w-4/5 m-auto">
+        <img src="../IMG/star pu.svg" alt="..." class="w-3 lg:w-5 -mt-24 ml-48 lg:ml-96" id="star">
+    </div>
+
+    <div class="hidden lg:flex justify-between lg:mb-16 w-4/5 m-auto px-28 lg:px-20">
+        <img src="../IMG/star.svg" alt="..." class="w-3 lg:w-5 lg:mt-14" id="star">
+        <img src="../IMG/star.svg" alt="..." class="lg:w-3 hidden lg:mt-10 lg:block" id="star">
+    </div>
 
 
     <!-- <form name="contact" netlify>

@@ -2,12 +2,12 @@
   "name": "tailwind",
   "version": "1.0.0",
   "description": "",
-  "main": "./src/index.js",
+  "main": "./src/",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "npx tailwindcss -i ./CSS/style.css -o ./src/output.css --watch"
   },
-  "author": "",
+  "author": "David, David",
   "license": "ISC",
   "dependencies": {
     "tailwind": "^4.0.0"

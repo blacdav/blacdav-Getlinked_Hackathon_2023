@@ -8,6 +8,7 @@ module.exports = {
         secondary: "#DA34FE",
         tertiary: "#150E28",
         light: "#FE34B9",
+        red: "#ff0000"
       }
     },
   },
