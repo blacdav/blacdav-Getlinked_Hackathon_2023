@@ -44,7 +44,9 @@ const c = document.querySelector('#email');
 const d = document.querySelector('#project-name');
 const f = document.querySelector('#category');
 const g = document.querySelector('#group');
-const form = document.querySelector('form')
+const form = document.querySelector('form');
+
+document.getSelection()
 
 form.addEventListener('submit', (e) => {
     e.preventDefault();
