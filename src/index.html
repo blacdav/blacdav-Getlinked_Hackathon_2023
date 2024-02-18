@@ -8,7 +8,7 @@
     </head>
 
     <body class="bg-tertiary text-white text-xs md:text-base m-auto">
-        <header class="pt-5 z-50 w-full bg-white/5 backdrop-blur-sm fixed">
+        <header class="py-5 z-50 w-full bg-white/5 backdrop-blur-sm fixed">
             <section class="w-4/5 m-auto">
                 <section class="flex gap-5 justify-between">
                     <h1 class="text-2xl font-bold -z-20">get<span class="text-secondary">linked</span></h1>
@@ -42,25 +42,25 @@
             </section>
         </header>
 
-        <section class="pt-24 lg:pt-0 w-4/5 m-auto flex flex-col-reverse lg:flex-row justify-between items-start text-end">
+        <section class="pt-5 w-4/5 m-auto flex flex-col-reverse lg:flex-row justify-between items-start text-end">
             <img src="../IMG/star.svg" alt="..." class="ml-10 w-3 lg:w-5 mt-20 animate-bounce" id="star">
-            <img src="../IMG/Purple-Lens-Flare-PNGblury.svg" alt="..." class="w-1/2 -mb-10 -mt-10">
+            <img src="../IMG/Purple-Lens-Flare-PNGblury.svg" alt="..." class="w-4/5 md:w-2/3 lg:w-1/2 -mb-10 -mt-10">
             <div class="mt-20 pb-5">
                 <p class="text-sm lg:text-2xl font-bold">Igniting a Revolution in HR Innovation</p>
-                <img src="../IMG/Vector 4line.svg" alt="..." class="w-24 lg:w-36 float-right">
+                <img src="../IMG/line.svg" alt="..." class="w-24 lg:w-36 float-right">
             </div>
         </section>
         
-        <section class="flex flex-col lg:flex-row w-4/5 m-auto justify-center lg:justify-between lg:-mt-48">
+        <section class="flex flex-col lg:flex-row w-4/5 m-auto justify-center lg:justify-between -mt-56 md:-mt-96 lg:-mt-48">
             
             <div class="w-full lg:w-1/2 text-center lg:text-justify">
                 <img src="../IMG/Title.webp" alt="...">
                 <p>Participate in getlinked tech hackathon 2023 stand <br>a chance to win a Big prize</p>
                 <button class="gradient my-5 py-2 px-8 rounded-sm"><a href="register.html">Register</a></button>
                 <div class="flex gap-5 text-4xl justify-center lg:justify-normal">
-                    <p>00<span class="text-sm">H</span></p> 
-                    <p>00<span class="text-sm">M</span></p> 
-                    <p>00<span class="text-sm">S</span></p>
+                    <p><span id="hour">00</span><span class="text-sm">H</span></p> 
+                    <p><span id="mins">00</span><span class="text-sm">M</span></p> 
+                    <p><span id="secs">00</span><span class="text-sm">S</span></p>
                 </div>
             </div>
 
@@ -72,7 +72,7 @@
             </div>
         </section>
 
-        <section class="flex flex-col lg:flex-row  items-center w-4/5 mx-auto mt-56 gap-12 text-center lg:text-left">
+        <section class="flex flex-col lg:flex-row  items-center w-4/5 mx-auto mt-56 lg:mt-5 gap-12 text-center lg:text-left">
             <div class="flex flex-col lg:flex-row items-center lg:items-end w-full lg:w-1/2">
                 <img src="../IMG/star pu.svg" alt="..." class="-mb-36 float-left z-10 lg:mb-80 w-3 lg:w-5 text-light" id="star">
                 <img src="../IMG/The big idea.webp" alt="..." class="animate-pulse">
@@ -205,7 +205,7 @@
             </div>
             <div class="w-full lg:w-1/2 flex flex-col lg:flex-row">
                 <img src="../IMG/cup.webp" alt="...">
-                <img src="../IMG/Rewards.webp" alt="...">
+                <img src="../IMG/Rewards.webp" alt="..." class="mt-16 lg:mt-0">
             </div>
         </section>
 
@@ -214,27 +214,27 @@
                 <h1 class="text-2xl font-bold my-3">Partners and Sponsors</h1>
                 <p>Getlinked Hackathon 1.0 is honored to have the following major companies as its partners and sponsors</p>
             </div>
-            <div class="m-auto w-full lg:w-4/5 border border-secondary p-5 lg:p-16 rounded-sm">
+            <div class="m-auto w-full border border-secondary p-5 lg:p-16 rounded-sm">
                 <img src="../IMG/Partner and Sponsors.webp" alt="...">
             </div>
         </section>
 
-        <section class="w-4/5 m-auto" id="pppt">
+        <section class="w-4/5 mx-auto my-24" id="pppt">
             <div class="w-full lg:w-1/2">
-                <div>
+                <div class="text-center lg:text-justify">
                     <h1 class="text-2xl font-bold">Privacy Policy and <br><span class="text-secondary">Terms</span></h1>
-                    <small class="flex justify-between text-sm my-3">Last updated on September 12, 2023 <img src="../IMG/star pu.svg" alt="..." class="w-3 lg:w-5"></small>
+                    <small class="flex justify-between text-sm my-3">Last updated on September 12, 2023 <img src="../IMG/star pu.svg" alt="..." class="w-3 lg:w-5" id="star"></small>
                     <p>Below are our privacy and policy, which a lot of goodies. <br> it's our aim to always takes of our participant</p>
                 </div>
-                <div class="border border-secondary p-10 lg:bg-white/5 backdrop-blur-sm rounded-sm">
+                <div class="border border-secondary p-10 mt-16 lg:bg-white/5 backdrop-blur-sm rounded-sm">
                     <p>
                         At getlinked tech Hackathon 1.0, we value your privacy and are committed to protecting your personal 
                         information. This Privacy Policy outlines how we collect, use, disclose, and safeguard your data when 
                         when you participate in our tech hackathon event. By Participating in our event, you consent to the 
                         Practices described in thi policy.
                     </p>
-                    <h1>Licensing Policy</h1>
-                    <p>Here are terms of our Standard License:</p>
+                    <h1 class="font-bold text-secondary mt-7">Licensing Policy</h1>
+                    <p class="mb-3">Here are terms of our Standard License:</p>
                     <ul>
                         <li class="flex items-baseline"><img src="../IMG/star.svg" alt="..." class="mr-1 w-3">The Standard License grants you a non-exclusive right to navigate and register for our event</li>
                         <li class="flex items-baseline"><img src="../IMG/star.svg" alt="..." class="mr-1 w-3">You are licensed to use the item available at any free source sites, for your project development</li>
