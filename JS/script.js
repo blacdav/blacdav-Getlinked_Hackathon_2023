@@ -1,3 +1,7 @@
+const hour = document.querySelector('#hour');
+const mins = document.querySelector('#mins');
+const secs = document.querySelector('#secs');
+
 // this function selects all the star, via an id and sets a class of animate-bounce to each of them.
 const star = document.querySelectorAll('#star');
 
