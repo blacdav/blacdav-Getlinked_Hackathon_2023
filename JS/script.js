@@ -50,8 +50,6 @@ const f = document.querySelector('#category');
 const g = document.querySelector('#group');
 const form = document.querySelector('form');
 
-document.getSelection()
-
 form.addEventListener('submit', (e) => {
     e.preventDefault();
 
@@ -67,7 +65,7 @@ const setErrorFor = (input, message) => {
     small.innerText = message;
     
     // set border color if error detected
-    formControl.classList.add('border-secondary');
+    formControl.classList.replace('border-none','border-red');
 }
 
 // this function confirnms the correctness of form input, before allowing for submission
@@ -88,8 +86,8 @@ const checkInput = () => {
     const telephone = b.value.trim();
     const email = c.value.trim();
     const project = d.value.trim();
-    const category = f.value.trim();
-    const group = g.value.trim();
+    const category = f.value;
+    const group = g.value;
 
     // Conditional statement for team
     if(team === ''){
@@ -137,7 +135,7 @@ const checkInput = () => {
         setSuccessFor(f, '');
     }
 
-    // Conditional statement for group
+    // // Conditional statement for group
     if(group === ''){
         setErrorFor(g, 'please select your group');
     }

@@ -59,7 +59,7 @@
             <h1 class="text-secondary text-2xl font-bold mb-5 hidden lg:block z-10">Register</h1>
             <p class="mb-2">Be part of this movement!..........</p>
             <h2 class="text-xl lg:text-2xl font-semibold mb-5">CREATE YOUR ACCOUNT</h2>
-            <form action="" method="post" name="contact" netlify>
+            <form action="/src/index.html" method="post" name="contact" netlify>
                 <div class="grid grid-cols-1 lg:grid-cols-2 gap-4">
                     <label for="team-name" class="flex flex-col form-control">Team's Name <input type="text" name="team-name" id="team-name" class="bg-transparent border border-white rounded-sm p-2" placeholder="Enter the name of your group"><small class="text-red"></small></label>
                     <label for="telephone" class="flex flex-col form-control">Phone <input type="tel" name="telephone" id="telephone" class="bg-transparent border border-white rounded-sm p-2" placeholder="Enter your phone number"><small class="text-red"></small></label>
@@ -71,9 +71,9 @@
                         <label for="category">Category</label>
                         <select name="category" id="category" class="bg-transparent border border-white rounded-sm p-2">
                             <option value="" class="bg-tertiary border border-none p-2">Select your Category</option>
-                            <option value="" class="bg-tertiary border border-none p-2">Category One</option>
-                            <option value="" class="bg-tertiary border border-none p-2">Category Two</option>
-                            <option value="" class="bg-tertiary border border-none p-2">Category Three</option>
+                            <option value="category" class="bg-tertiary border border-none p-2">Category One</option>
+                            <option value="category" class="bg-tertiary border border-none p-2">Category Two</option>
+                            <option value="category" class="bg-tertiary border border-none p-2">Category Three</option>
                         </select>
                         <small class="text-red"></small>
                     </div>
@@ -81,16 +81,16 @@
                         <label for="group">Group</label>
                         <select name="group" id="group" class="bg-transparent border border-white rounded-sm p-2">
                             <option value="" class="bg-tertiary border border-none p-2">Select</option>
-                            <option value="" class="bg-tertiary border border-none p-2">Five</option>
-                            <option value="" class="bg-tertiary border border-none p-2">Six</option>
-                            <option value="" class="bg-tertiary border border-none p-2">Seven</option>
-                            <option value="" class="bg-tertiary border border-none p-2">Eight</option>
+                            <option value="group" class="bg-tertiary border border-none p-2">Five</option>
+                            <option value="group" class="bg-tertiary border border-none p-2">Six</option>
+                            <option value="group" class="bg-tertiary border border-none p-2">Seven</option>
+                            <option value="group" class="bg-tertiary border border-none p-2">Eight</option>
                         </select>
                         <small class="text-red"></small>
                     </div>
                 </div>
                 <p class="text-secondary my-2 text-xs"><em>Please review your registration details before submitting</em></p>
-                <p class="text-xs"><input type="checkbox" name="confirm" id="agreed" class="bg-transparent"> I agreed to the event terms and conditions and privacy policy</p>
+                <p class="text-xs"><input type="checkbox" name="confirm" id="agreed" title="check"> I agreed to the event terms and conditions and privacy policy</p>
                 <button type="submit" class="w-full p-2 rounded-sm gradient mt-5 mb-5 lg:mb-0">Register Now</button>
             </form>
         </div>
