@@ -53,7 +53,7 @@ const form = document.querySelector('form');
 form.addEventListener('submit', (e) => {
     e.preventDefault();
 
-    checkInput()
+    checkInput();
 });
 
 // this function controls the visibilty of error messages when there is a wrong or invalid input.
@@ -77,7 +77,7 @@ const setSuccessFor = (input, message) => {
     small.innerText = message;
     
     // set border color if error detected
-    small.classList.replace('text-red', 'text-green')
+    small.classList.replace('text-red', 'text-green');
 }
 
 // this function checks the input, and ignores empty spaces before or after characters have been typed in.
@@ -94,7 +94,7 @@ const checkInput = () => {
         setErrorFor(a, 'Please enter your team name');
     }
     else if(team.length > 12){
-        setErrorFor(a, 'team name must be lessthan 12')
+        setErrorFor(a, 'team name must be lessthan 12');
     }
     else{
         setSuccessFor(a, '');
