@@ -107,4 +107,7 @@ const checkInput = () => {
     if(team && telephone && email && project && category && group) {
         form.submit();
     }
+    // if(team && telephone && email && project && category && group) {
+    //     form.submit();
+    // }
 }
